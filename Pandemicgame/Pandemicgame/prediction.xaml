@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="Pandemicgame.prediction">
+    <ScrollView>
+        <StackLayout Margin="10,10,10,10" Orientation="Vertical">
+            <Label x:Name="Health" Text="Healthy"/>
+            <forms:ChartView x:Name="Chart3" HeightRequest="150"/>
+            <Label Text="Cured" x:Name="Cured"/>
+            <forms:ChartView x:Name="Chart2" HeightRequest="150"/>
+            <Label Text="Infected" x:Name="Infected"/>
+            <forms:ChartView x:Name="Chart1" HeightRequest="150"/>
+            <Label Text="Deaths" x:Name="Death" />
+            <forms:ChartView x:Name="Chart4" HeightRequest="150"/>
+            <Label Text="Deaths" x:Name="BIP" />
+            <forms:ChartView x:Name="Chart5" HeightRequest="150"/>
+            <Button x:Name="Back"
+                Text="Back"
+                BackgroundColor="Red"
+                BorderRadius="10"
+                BorderWidth="3"
+                BorderColor="Black"
+                Clicked="Back_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Pandemicgame.mobility">
+    <ContentPage.Content>
+        <StackLayout Margin="10,10,10,10" HorizontalOptions="CenterAndExpand">
+            <Label Text="Change the Mobility with the Slider.&#x0a;(By 100% is the public transport as active as ususally)"/>
+            <Slider x:Name="MobilitySlider"
+                Value="100"
+                BackgroundColor="Black"
+                Maximum="200" 
+                Minimum="1"
+                ValueChanged="Slider_Moved"/>
+            <Label x:Name="DisplayLabel"
+               Text="The Mobility is currently at 100%"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+            <Button x:Name="Back"
+                Text="Back"
+                BackgroundColor="Red"
+                BorderRadius="10"
+                BorderWidth="3"
+                BorderColor="Black"
+                Clicked="BackButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

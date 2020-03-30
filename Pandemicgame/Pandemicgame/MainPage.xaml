@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Pandemicgame.MainPage">
+
+    <StackLayout Margin="10,10,10,10">
+        <Label 
+            x:Name="BIPI"
+            Text="BIP:">
+        </Label>
+        <Label 
+            x:Name="Deaths"
+            Text="Deaths:">
+        </Label>
+        <Label 
+            x:Name="Infected"
+            Text="Infected:">
+        </Label>
+        <Label 
+            x:Name="Population"
+            Text="Population:">
+        </Label>
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand">
+            <Button x:Name="People"
+                FontSize="Caption"
+                Text="People"
+                BackgroundColor="Red"
+                BorderRadius="10"
+                BorderWidth="3"
+                BorderColor="Black"
+                Clicked="PeopleButton_Clicked"
+                Padding="0"/>
+            <Button x:Name="Situation"
+                FontSize="Caption"
+                Text="Situation"
+                BackgroundColor="Red"
+                BorderRadius="10"
+                BorderWidth="3"
+                BorderColor="Black"
+                Clicked="SituationButton_Clicked"
+                Padding="0"/>
+            <Button x:Name="Laws"
+                FontSize="Caption"
+                Text="Laws"
+                BackgroundColor="Red"
+                BorderRadius="10"
+                BorderWidth="3"
+                BorderColor="Black"
+                Clicked="LawsButton_Clicked"
+                Padding="0"/>
+            <Button x:Name="Prediction"
+                FontSize="Caption"
+                Text="Prediction"
+                BackgroundColor="Red"
+                BorderRadius="10"
+                BorderWidth="3"    
+                BorderColor="Black"
+                Clicked="PredictionButton_Clicked"
+                Padding="0"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

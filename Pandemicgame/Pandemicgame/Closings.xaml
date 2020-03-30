@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Pandemicgame.Closings">
+    <ContentPage.Content>
+        <StackLayout Margin="10,10,10,10" Orientation="Vertical">
+            <Button x:Name="Essential_Stores"
+                Text="Essential Stores (tap to close)"
+                BackgroundColor="Red"
+                BorderRadius="10"
+                BorderWidth="3"
+                BorderColor="Black"
+                Clicked="EssentialStoresButton_Clicked"/>
+            <Button x:Name="Non_Essential_Stores"
+                Text="Non Essential Stores (tap to close)"
+                BackgroundColor="Red"
+                BorderRadius="10"
+                BorderWidth="3"
+                BorderColor="Black"
+                Clicked="NonEssentialStoresButton_Clicked"/>
+            <Button x:Name="Schools"
+                Text="Schools (tap to close)"
+                BackgroundColor="Red"
+                BorderRadius="10"
+                BorderWidth="3"
+                BorderColor="Black"
+                Clicked="SchoolsButton_Clicked"/>
+            <Button x:Name="Parks"
+                Text="Parks (tap to close)"
+                BackgroundColor="Red"
+                BorderRadius="10"
+                BorderWidth="3"
+                BorderColor="Black"
+                Clicked="ParksButton_Clicked"/>
+            <Button x:Name="Restaurants"
+                Text="Restaurants (tap to close)"
+                BackgroundColor="Red"
+                BorderRadius="10"
+                BorderWidth="3"
+                BorderColor="Black"
+                Clicked="RestaurantsButton_Clicked"/>
+            <Button x:Name="Back"
+                Text="Back"
+                BackgroundColor="Red"
+                BorderRadius="10"
+                BorderWidth="3"
+                BorderColor="Black"
+                Clicked="BackButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
